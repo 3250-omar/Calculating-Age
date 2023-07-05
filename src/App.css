@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Bai+Jamjuree:wght@500&family=Barlow+Semi+Condensed&family=Belanosima&family=Hanken+Grotesk:wght@300&family=Indie+Flower&family=Montserrat&family=Outfit&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:ital,wght@0,400;0,700;1,400;1,800&family=Raleway:wght@400;700&family=Rubik:wght@500&family=Ubuntu:wght@400;500&family=Vina+Sans&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--Off-white);
+  
+}
+.Container{
+  background-color: var(--White);
+  padding: 2rem;
+  border-radius: 1rem 1rem 150px 1rem;
+}
+.CalculationArea{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.HeaderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 2rem;
+    border-bottom: .25px solid var(--Light-grey);
+}
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+li label {
+    letter-spacing: 2px;
+    font-size:x-small;
+    font-weight: bold;
+}
+input {
+    font-size: 1.5rem;
+    width: 100px;
+    padding: 7px;
+    border: .25px solid var(--Light-grey);
+    border-radius: 5px;
+    font-weight: bold;
+
+  }
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.CalculationArea h1 span {
+  color: var(--Purple);
+}
+.error{
+  font-size: x-small;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--Light-red);
+}
+.title{
+  margin-bottom: 5rem;
+  color: rgba(0,150,0,1);
+}
+@media only screen and (max-width:400px) {
+  input {
+    font-size: 1rem;
+  }
+  .Container{
+    padding: 10px;
+    border-radius: 1rem 1rem 100px 1rem;
+  }
+  .CalculationArea{
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
